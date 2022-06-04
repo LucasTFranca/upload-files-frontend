@@ -14,7 +14,23 @@ const getFile = async (fileName) => {
   return data;
 };
 
+const sendFile = async (file) => {
+  const form = new FormData();
+  form.append('file', file);
+
+  const config = {
+    headers: {
+      'content-type': 'multipart/form-data',
+    },
+  };
+
+  const axiosFile = axios.create();
+
+  await axiosFile.post(`${baseUrl}/file/upload`, form, config);
+};
+
 export {
   getAllFiles,
   getFile,
+  sendFile,
 };
