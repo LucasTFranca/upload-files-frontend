@@ -11,7 +11,7 @@ function FileCard({ file: fileProps }) {
   const fileNameWithoutDate = fileName.split('-')[1];
 
   function redictPageToFileDetails() {
-    navigate('/file/details');
+    navigate(`/file/details/${fileName}`);
   }
 
   async function downloadFile() {
