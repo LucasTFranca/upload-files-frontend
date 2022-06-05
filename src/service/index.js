@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = 'https://upload-files-backendd.herokuapp.com';
+const baseUrl = 'http://localhost:4000';
 
 const getAllFiles = async () => {
   const { data } = await axios.get(`${baseUrl}/file`);
