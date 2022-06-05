@@ -10,6 +10,7 @@
 
 .file-details p {
   margin-top: 1.5em;
+  align-self: center;
 }
 
 .file-details button {

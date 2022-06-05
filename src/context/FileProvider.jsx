@@ -16,7 +16,13 @@ function FileProvider({ children }) {
     loadFiles();
   }, [setFiles]);
 
-  const state = useMemo(() => ({ files }), [files]);
+  async function updateFiles() {
+    const data = await getAllFiles();
+
+    setFiles(data);
+  }
+
+  const state = useMemo(() => ({ files, updateFiles }), [files]);
 
   return (
     <FileContext.Provider value={state}>

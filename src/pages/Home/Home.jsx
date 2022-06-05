@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import FileCard from '../../components/FileCard/FileCard';
 import Header from '../../components/Header/Header';
 import FileContext from '../../context/FileContext';
@@ -6,7 +6,11 @@ import FileContext from '../../context/FileContext';
 import './Home.css';
 
 function Home() {
-  const { files } = useContext(FileContext);
+  const { files, updateFiles } = useContext(FileContext);
+
+  useEffect(() => {
+    updateFiles();
+  });
 
   return (
     <>

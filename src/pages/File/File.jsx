@@ -9,6 +9,7 @@ function File() {
 
   async function uploadFile() {
     await sendFile(file);
+    alert('Uploaded successfully');
   }
 
   function handleFile({ target }) {
