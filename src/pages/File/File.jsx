@@ -19,10 +19,9 @@ function File() {
     <>
       <Header />
       <div className="file">
-        <div>
-          <label htmlFor="file">
-            <input onChange={handleFile} id="file" type="file" />
-          </label>
+        <div className="file-upload-container">
+          <h1>Upload your file!</h1>
+          <input onChange={handleFile} type="file" />
           <button onClick={uploadFile} type="button">upload</button>
         </div>
       </div>
