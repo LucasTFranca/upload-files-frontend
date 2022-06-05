@@ -1,0 +1,27 @@
+.file-details {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+
+.file-details h1 {
+  align-self: center;
+}
+
+.file-details p {
+  margin-top: 1.5em;
+}
+
+.file-details button {
+  align-self: center;
+  margin-top: 2.5em;
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+  height: 5vh;
+  width: 10em;
+  background: #0772ba;
+  font-size: 16px;
+  font-weight: 700;
+  color: aliceblue;
+}

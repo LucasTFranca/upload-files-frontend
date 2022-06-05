@@ -1,8 +1,10 @@
 import fileDownload from 'js-file-download';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Header from '../components/Header/Header';
-import { getFile } from '../service';
+import Header from '../../components/Header/Header';
+import { getFile } from '../../service';
+
+import './FileDetails.css';
 
 function FileDetails() {
   const [file, setFile] = useState('');
@@ -25,14 +27,14 @@ function FileDetails() {
   }
 
   return (
-    <div>
+    <>
       <Header />
-      <div>
+      <div className="file-details">
         <h1>{fileName}</h1>
         <p>{file}</p>
         <button onClick={downloadFile} type="button">download</button>
       </div>
-    </div>
+    </>
   );
 }
 
