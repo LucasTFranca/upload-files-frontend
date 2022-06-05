@@ -1,0 +1,28 @@
+.file-card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5em;
+}
+
+.name-file-container {
+  font-weight: 600;
+}
+
+.button-file-container {
+  display: flex;
+  justify-content: space-between;
+  width: 9.5em;
+}
+
+.button-file-container button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  background: rgb(187, 187, 187);
+  color: #242423;
+}
+
+#donwload-button {
+  background: #0772ba;
+  color: aliceblue;
+}

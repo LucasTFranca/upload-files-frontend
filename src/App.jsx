@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import File from './pages/File';
 import FileDetails from './pages/FileDetails';
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 
 function App() {
   return (
