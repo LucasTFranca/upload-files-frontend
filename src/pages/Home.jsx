@@ -1,6 +1,6 @@
 import React, { useContext, useId } from 'react';
 import FileCard from '../components/FileCard';
-import Header from '../components/Header';
+import Header from '../components/Header/Header';
 import FileContext from '../context/FileContext';
 
 function Home() {

@@ -1,6 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import './Header.css';
+
 function Header() {
   const navigate = useNavigate();
 
@@ -20,7 +22,7 @@ function Header() {
   }
 
   return (
-    <div>
+    <div className="header">
       <button id="home" onClick={handleClick} type="button">Home</button>
       <button id="file" onClick={handleClick} type="button">File</button>
     </div>
