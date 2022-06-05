@@ -1,4 +1,4 @@
-import React, { useContext, useId } from 'react';
+import React, { useContext } from 'react';
 import FileCard from '../../components/FileCard/FileCard';
 import Header from '../../components/Header/Header';
 import FileContext from '../../context/FileContext';
@@ -14,7 +14,7 @@ function Home() {
       <div className="home">
         <div className="file-cards-container">
           {
-            files.map((file) => <FileCard key={useId()} file={file} />)
+            files.map((file) => <FileCard key={file.fileName} file={file} />)
           }
         </div>
       </div>
